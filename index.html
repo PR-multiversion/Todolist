@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar">
+            <i class='bx bxs-timer'></i>
+            <div class="logo">
+                <a href="#">PR-CREATION</a>
+            </div>
+            <i class='bx bx-task'></i>
+        </nav>
+        <div class="container">
+            <div class="clock">
+                <div class="timer">
+                    <div class="time-cont">
+                        <!-- <div class="time-todo-con">
+                            <div class="time-clock">
+                                <div class="hour">00</div>
+                                <div class="min">00</div>
+                                <div class="sec">00</div>
+                            </div>
+                            <div class="todo-content">To finish Internet programming lab record</div>
+                        </div> -->
+                    </div>
+                    <div class="add">
+                        <div class="addtxt">Add ToDo List</div> 
+                        <div class="plus"><i class='bx bx-plus'></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="todo">
+                    <div class="todoadd">
+                        <div class="addtxt">Add ToDo List</div> 
+                        <div class="plus"><i class='bx bx-plus'></i></div>
+                    </div>
+                    <div class="taskbtn"><i class='bx bx-task'></i></div>
+                    <div class="createcont">
+                        <div class="create">
+                            <form id="myForm">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="c-txt">Name</span></td>
+                                            <td><input type="text" class="name" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="c-txt">Due Date</span></td>
+                                            <td><input type="datetime-local" id="datetime" class="duedate" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="c-txt">Remainder</span></td>
+                                            <td><input type="time" id="time" class="setrem"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="text-align: center;"><button type="submit" class="create-btn" onclick="timer()">CREATE</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="editcont">
+                        <div class="editname">
+                            <input type="text" class="ename" placeholder="rename">
+                            <button type="button" class="edit">Edit</button>
+                        </div>
+                    </div>
+                    <div class="remindcont">
+                        <div class="reminddiv">
+                            <input type="time" class="remind">
+                            <button type="button" class="reminbtn">Remind</button>
+                        </div>
+                    </div>
+                    <div class="compcont">
+                        <div class="totcompl">
+                            <div class="del"><i class='bx bx-trash' style='color:#0a0000'></i></div>
+                            <div class="comptxt">COMPLETED</div>
+                            <div class="compl">
+                                <ul class="compul"></ul>
+                            </div>
+                            <div class="comptxt">INCOMPLETE</div>
+                            <div class="incomp">
+                                <ul class="incomul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showtodo">
+                        <!-- <div class="todobox">
+                            <input type="checkbox" class="checkbox">
+                            <div class="todotxt">First work egegeg rte tetetet  twtwetwe</div>
+                                <i class='bx bx-edit'></i>
+                                <i class='bx bx-alarm'></i>
+                        </div> -->
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
