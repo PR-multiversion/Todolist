@@ -402,6 +402,10 @@ input{
 {
     display: none;
 }
+.compl::-webkit-scrollbar
+{
+    display: none;
+}
 .incomp ul{
     padding: 10px;
 }
